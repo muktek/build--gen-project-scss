@@ -1,6 +1,17 @@
 # Generate SCSS Project
 `gen-project-scss`
 
+### SCSS Installation
+
+1. Make sure you have SCSS
+  ```sh
+  scss -v
+  ```
+
+2. If there is no output in the terminal. You will need to install SCSS: [Sass Install Instructions Page](http://sass-lang.com/install)
+
+---
+
 ### Download + Setup
 
 ```sh
@@ -13,6 +24,8 @@ curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/wat
 # (3) Create executable permissions on the 2 downloaded files
 sudo chmod u+x /usr/local/bin/watch-scss /usr/local/bin/gen-project-scss
 ```
+
+---
 
 ### Execution
 
