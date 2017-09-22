@@ -2,7 +2,7 @@
 
 mkdir $1
 cd $1
-touch index.html
+touch index.html .gitignore
 mkdir scss css images
 touch ./scss/main.scss ./css/styles.css
 
@@ -26,6 +26,7 @@ cat <<EOT >> ./scss/main.scss
 @import "./imports/_normalize.scss";
 
 *{ box-sizing: border-box }
+
 img {
    width: 100%;
    display: block;
@@ -35,6 +36,13 @@ img {
 }
 EOT
 
+cat <<EOT >> .gitignore
+.sass-cache/*
+css/styles.css.map
+EOT
+
+
+
 # Normalize?
 mkdir ./scss/imports
-https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css
+curl https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css > ./scss/imports/_normalize.scss
