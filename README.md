@@ -5,7 +5,10 @@
 ##### Ruby Installation
 
 ```sh
-curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/install-ruby-rbenv.sh | sudo sh 
+curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/install-ruby-rbenv.sh > install-ruby-rbenv.sh
+
+sudo sh install-ruby-rbenv.sh
+rm install-ruby-rbenv.sh
 ```
 
 
