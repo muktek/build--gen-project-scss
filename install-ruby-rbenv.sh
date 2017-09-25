@@ -11,6 +11,6 @@ sudo git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-bui
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 exec $SHELL
 
-rbenv install 2.4.2
+rbenv install 2.4.2 --verbose
 rbenv global 2.4.2
 ruby -v
