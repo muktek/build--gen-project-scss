@@ -1,5 +1,6 @@
 cd ~
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+sudo chown $USER -R ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 exec $SHELL
