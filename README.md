@@ -1,14 +1,20 @@
 # Generate SCSS Project
 `gen-project-scss`
 
-### SCSS Installation
+### Pre Configuration
+##### Ruby Installation
 
-1. Make sure you have SCSS
-  ```sh
-  scss -v
-  ```
+```sh
+curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/install-ruby-rbenv.sh | sudo sh 
+```
 
-2. If there is no output in the terminal. You will need to install SCSS: [Sass Install Instructions Page](http://sass-lang.com/install)
+
+##### Sass/SCSS Installation
+
+```sh
+gem install sass
+scss -v
+```
 
 ---
 
