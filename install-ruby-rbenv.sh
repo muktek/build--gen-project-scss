@@ -4,7 +4,9 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 exec $SHELL
 
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+sudo mkdir -p ~/.rbenv/plugins
+sudo git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 exec $SHELL
 
