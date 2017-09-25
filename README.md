@@ -22,12 +22,17 @@ scss -v
 
 ```sh
 # (1) Download gen-project-scss.sh bash script into /usr/local/bin
-curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/gen-project-scss.sh > /usr/local/bin/gen-project-scss
+curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/gen-project-scss.sh > gen-project-scss
+
 
 # (2) Download watch-scss.sh bash script into /usr/local/bin
-curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/watch-scss.sh > /usr/local/bin/watch-scss
+curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/watch-scss.sh > watch-scss
 
-# (3) Create executable permissions on the 2 downloaded files
+# (3)Move files to `/usr/local/bin`
+sudo mv gen-project-scss /usr/local/bin/gen-project-scss
+sudo mv watch-scss /usr/local/bin/watch-scss
+
+# (4) Create executable permissions on the 2 downloaded files in `/usr/local/bin`
 sudo chmod u+x /usr/local/bin/watch-scss /usr/local/bin/gen-project-scss
 ```
 
