@@ -7,6 +7,7 @@ mkdir scss css images
 touch ./scss/main.scss ./css/styles.css
 
 cat <<EOT >> index.html
+<!DOCTYPE>
 <html>
    <head>
       <meta charset="utf-8">
