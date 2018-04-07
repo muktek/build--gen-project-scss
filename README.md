@@ -2,27 +2,15 @@
 `gen-project-scss`
 
 ### Pre Configuration
-##### Ruby Installation
+##### Ruby + Sass/SCSS Installation
 
 ```sh
-# (1) go into your sandbox
-cd ~/Documents/sandbox/
+# (1) Install Ruby
+sudo apt-get install ruby-full
+ruby -v
 
-#(2) Download/install dependencies
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
-
-#(2) Download script for ruby installer
-curl https://raw.githubusercontent.com/muktek/build--gen-project-scss/master/install-ruby-rbenv.sh > install-ruby-rbenv.sh
-
-sudo sh install-ruby-rbenv.sh
-rm install-ruby-rbenv.sh
-```
-
-
-##### Sass/SCSS Installation
-
-```sh
-gem install sass
+# (2) Install Sass
+sudo gem install sass
 scss -v
 ```
 
